@@ -1,0 +1,31 @@
+body {
+    margin:0;
+}
+#container {
+    display: grid;
+    height:100dvh;
+    grid-template-columns:3fr 2fr;
+}
+#hero {
+    background-image: url("/images/hero-desktop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#hero {
+    /* grid-area: */
+    grid-row-start:1 ;
+    grid-column-start:2 ;
+    grid-row-end:3 ;
+}
+@media (min-width:280px) and (max-width:620px)
+{
+    #container {
+        grid-template-columns: 1fr;
+        grid-template-rows:1fr 3fr 4fr ;
+    }
+    #hero {
+        background-image: url("/images/hero-mobile.jpg");
+        grid-area:unset;
+    }
+}
