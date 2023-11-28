@@ -59,7 +59,7 @@ p {
         min-width: unset;
     }
     .centering > div {
-        width: unset;
+        width: 100%;
     }
     #hero {
         background-image: url("/images/hero-mobile.jpg");
@@ -67,5 +67,15 @@ p {
     }
     .centering {
         justify-content: flex-start;
+    }
+    .centeringForContent {
+        justify-content: center;
+    }
+    /* centering the content */
+    
+    /* font related stuff */
+    h1 {
+        font-size: 220%;
+        letter-spacing: 0.5rem;
     }
 }
