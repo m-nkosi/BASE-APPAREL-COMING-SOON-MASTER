@@ -5,6 +5,7 @@ body {
     display: grid;
     height:100dvh;
     grid-template-columns:3fr 2fr;
+    grid-template-rows: 1fr 4fr;
 }
 #hero {
     background-image: url("/images/hero-desktop.jpg");
