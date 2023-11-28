@@ -7,6 +7,16 @@ body {
     grid-template-columns:3fr 2fr;
     grid-template-rows: 1fr 4fr;
 }
+.centering {
+    display: flex;
+    justify-content: center;
+}
+.centering > div {
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
 #hero {
     background-image: url("/images/hero-desktop.jpg");
     background-position: center;
