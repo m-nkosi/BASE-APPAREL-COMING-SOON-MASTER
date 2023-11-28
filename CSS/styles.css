@@ -65,4 +65,7 @@ p {
         background-image: url("/images/hero-mobile.jpg");
         grid-area:unset;
     }
+    .centering {
+        justify-content: flex-start;
+    }
 }
