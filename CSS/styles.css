@@ -77,13 +77,26 @@ p {
 form  {
     display: flex;
     justify-content: center;
-    height:5dvh;
+    /* height:7dvh; */
+    position:relative;
 }
 form > input {
-    width:85%;
+    width:100%;
 }
+
+form > * {
+    padding:1.5vw 1.5vw;
+    font-size: 1.2vw;
+    border: 1px solid pink;
+    border-radius: 5dvh;
+} 
 form > button {
-    width:15%;
+    width:25%;
+    padding:unset;
+    padding: 1.35vw 3.6vw;
+    position: absolute;
+    height: 100%;
+    right:0;
 }
 @media (min-width:100px) and (max-width:620px)
 {
