@@ -22,11 +22,15 @@ body {
     flex-direction: column;
     /* justify-content: center; */
 }
+.centeringForContent {
+    min-width: 600px;
+}
 #hero {
     background-image: url("/images/hero-desktop.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    min-width: 600px;
 }
 /* Logo related */
 .forLogo {
@@ -114,6 +118,7 @@ form > button {
         grid-column-end:2;
         grid-row-start:2 ;
         grid-row-end:3;
+        min-width: unset;
     }
 
     .centering {
@@ -124,6 +129,7 @@ form > button {
     }
     .centeringForContent {
         justify-content: center;
+        min-width: unset;
     }
     /* font related stuff */
     #heading {
