@@ -22,11 +22,15 @@ body {
     flex-direction: column;
     /* justify-content: center; */
 }
+.centeringForContent {
+    min-width: 600px;
+}
 #hero {
     background-image: url("/images/hero-desktop.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    min-width: 600px;
 }
 /* Logo related */
 .forLogo {
