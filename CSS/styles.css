@@ -118,6 +118,7 @@ form > button {
         grid-column-end:2;
         grid-row-start:2 ;
         grid-row-end:3;
+        min-width: unset;
     }
 
     .centering {
@@ -128,6 +129,7 @@ form > button {
     }
     .centeringForContent {
         justify-content: center;
+        min-width: unset;
     }
     /* font related stuff */
     #heading {
