@@ -20,13 +20,27 @@ body {
     width:55%;
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
 }
 #hero {
     background-image: url("/images/hero-desktop.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+/* Logo related */
+.forLogo {
+    grid-row-start:1;
+    grid-row-end:2;
+    grid-column-start:1;
+    grid-column-end: 2;
+}
+#logo {
+    align-self: center;
+}
+#logo > svg {
+    height: 5dvh;
+    width: 20%;
 }
 #hero {
     /* grid-area: */
@@ -37,7 +51,7 @@ body {
 /* font related stuff */
 h1 {
     font-weight: 600;
-    font-size:300%;
+    font-size:5vw;
     margin:0;
     letter-spacing: 1.6rem;
 }
@@ -49,35 +63,40 @@ h1 > span {
 }
 p {
     font-weight: 400;
+    font-size: 1.2vw;
     line-height: 1.6;
+}
+/* Content */
+#content {
+    justify-content: space-around;
+}
+#content > div {
+    height:60dvh;
 }
 /* form related stuff */
 form  {
     display: flex;
     justify-content: center;
-}
-form > button {
-    /* for broswer that dont support gradient */
-    background-color: pink;
-    background-image: linear-gradient(hsl(0, 80%, 86%), hsl(0, 74%, 74%));
-    width: 15%;
-    border-radius: 20px;
-    position: relative;
-    border:none;
-    min-width:60px;
-    right: 20px;
-    padding:10px 10px;
-}
-::placeholder {
-    color:hsl(0, 36%, 70%);
-    padding:0 0 0 20px;
+    /* height:7dvh; */
+    position:relative;
 }
 form > input {
-    width:80%;
-    border: 1px solid hsl(0, 36%, 70%);
-    border-radius: 20px 0 0 20px;
-    position: relative;
-    left:20px;
+    width:100%;
+}
+
+form > * {
+    padding:1.5vw 1.5vw;
+    font-size: 1.2vw;
+    border: 1px solid pink;
+    border-radius: 5dvh;
+} 
+form > button {
+    width:25%;
+    padding:unset;
+    padding: 1.35vw 3.6vw;
+    position: absolute;
+    height: 100%;
+    right:0;
 }
 @media (min-width:100px) and (max-width:620px)
 {
