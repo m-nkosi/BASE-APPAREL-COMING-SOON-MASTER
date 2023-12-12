@@ -94,7 +94,8 @@ form > button {
     height: 100%;
     right:0;
 }
-@media (min-width:100px) and (max-width:620px)
+/* mobile phones */
+@media (min-width:100px) and (max-width:1024px)
 {
     #container {
         grid-template-columns: 1fr;
