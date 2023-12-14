@@ -93,10 +93,22 @@ form > * {
 form > button {
     width:25%;
     padding:unset;
-    padding: 1.35vw 3.6vw;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 75%));
     position: absolute;
     height: 100%;
+    display: flex;
+    justify-content: center;
     right:0;
+}
+/* icon in the button */
+button > div {
+    background-image:url("/images/icon-arrow.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width:2vw;
+    aspect-ratio: 1/1;
+    align-self: center;
 }
 /* mobile phones */
 @media (min-width:100px) and (max-width:1024px)
