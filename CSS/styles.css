@@ -17,6 +17,7 @@ body {
 #background-desktop {
     background-image: url("/images/bg-pattern-desktop.svg");
     background-repeat: no-repeat;
+    background-size: cover;
     position:absolute;
     width:60%;
     height: 100dvh;
