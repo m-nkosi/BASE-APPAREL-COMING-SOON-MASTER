@@ -166,4 +166,7 @@ button > div {
     form > button  {
         width:20%;
     }
+    button > div {
+        width:3vw;
+    }
 }
