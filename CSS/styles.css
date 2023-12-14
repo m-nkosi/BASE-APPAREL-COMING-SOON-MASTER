@@ -11,6 +11,17 @@ body {
     grid-template-columns:3fr 2fr;
     grid-template-rows: 1fr 4fr;
     min-width: 780px;
+    position: relative;
+}
+/* background for desktop */
+#background-desktop {
+    background-image: url("/images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute;
+    width:60%;
+    height: 100dvh;
+    z-index: -1;
 }
 .centering {
     display: flex;
@@ -117,6 +128,10 @@ button > div {
         grid-template-columns: 1fr;
         grid-template-rows:1fr 4fr 6fr ;
         min-width: unset;
+        background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    }
+    #background-desktop {
+        display: none;
     }
     .forLogo{
         grid-area: unset;
