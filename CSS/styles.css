@@ -117,6 +117,7 @@ button > div {
         grid-template-columns: 1fr;
         grid-template-rows:1fr 4fr 6fr ;
         min-width: unset;
+        background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
     }
     .forLogo{
         grid-area: unset;
