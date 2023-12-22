@@ -45,13 +45,21 @@
             </p>
           </div>
           <form>
-            <input  type="email" placeholder="Email Address">
-            <button type="submit">
-              <div>
+            <input maxlength="30" type="email" placeholder="Email Address" class="errorInput">
+            
+              <div id="error">
 
               </div>
-            </button>
+              <button type="submit">
+                <div>
+  
+                </div>
+              </button>
+
           </form>
+          <div id="labelDiv">
+            <label>Please provide a valid email</label>
+          </div>
         </div>
 
   
