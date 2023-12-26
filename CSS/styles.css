@@ -110,19 +110,24 @@ form > * {
 input::placeholder {
     color:hsl(0, 36%, 70%);
 }
-input:focus {
-    border:1px solid white;
+input[type=email] {
+    outline-style: none;
 }
 form > button {
     width:8.2dvw;
     padding:unset;
-    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 75%));
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     position: absolute;
     height: 100%;
+    border:none;
     display: flex;
     justify-content: center;
     right:0;
-    box-shadow:1px 25px 50px 1px hsl(0, 36%, 70%);
+    box-shadow:1px 25px 50px 1px hsl(0, 76%, 85%);
+}
+button:hover {
+    cursor: pointer;
+    background: hsl(0, 93%, 90%);
 }
 /* icon in the button */
 button > div {
@@ -145,17 +150,19 @@ button > div {
     padding:unset;
     background-size: contain;
     align-self: center;
+    display: none;
 }
 label {
-    font-size: clamp(1rem, 3vw, 1.5rem);
+    font-size: clamp(1rem, 1vw, 2rem);
     color:hsl(0, 93%, 68%);
 }
-.errorInput {
-    border: 4px solid hsl(0, 93%, 68%);
+input:invalid {
+    border: 3px solid hsl(0, 93%, 68%);
 }
 #labelDiv {
     margin-top:10px;
     margin-left:1.5vw;
+    display: none;
 }
 /* mobile phones */
 @media (min-width:100px) and (max-width:1024px)
@@ -222,5 +229,12 @@ label {
     button > div {
         width:3vw;
         height: 3vh;
+    }
+    /* Error stuff mobile */
+    label {
+        font-size: clamp(0.5rem, 3.5vw, 3rem);
+    }
+    .errorInput {
+        border: 1px solid hsl(0, 93%, 68%);
     }
 }
