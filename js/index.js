@@ -7,16 +7,19 @@ $(document).ready(() => {
     // normal javaScript
     const email = document.getElementById('mail');
 
-    $email.on('keyup', () => {
+    $form.on('submit', () => {
         // everytime a user types something check if the form is valid
-        if (email.validity.valid)
+        if (!email.validity.valid || email.value =="" || email.value == null)
         {
-            $errorIcon.hide();
-            $label.hide()
-
-        }else{
             $errorIcon.show();
             $label.show();
+            $email.addClass('inputError');
+            return false;
+
+        }else{
+            $errorIcon.hide();
+            $label.hide();
+            email.removeClass('inputError');
         }
     })
 })
