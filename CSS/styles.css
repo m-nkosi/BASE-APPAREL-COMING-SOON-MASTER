@@ -156,7 +156,7 @@ label {
     font-size: clamp(1rem, 1vw, 2rem);
     color:hsl(0, 93%, 68%);
 }
-.errorInputActivated {
+input:invalid {
     border: 2px solid hsl(0, 93%, 68%);
 }
 #labelDiv {
